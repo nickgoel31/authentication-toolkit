@@ -1,0 +1,26 @@
+import Link from 'next/link'
+import React from 'react'
+
+const FeaturesTODO = () => {
+  return (
+    <div className='flex flex-col space-y-7'>
+        <h1 className='text-3xl font-semibold'>Upcoming Features</h1>
+
+        <div className='space-y-5 text-neutral-300'>
+            <li>Create your own authentication page and use the code in your own project. {"(In planning phase)"}</li>
+            <li>Account Overview</li>
+            <li>Password Reset functionality</li>
+            <li>2 factor authentication functionality</li>
+            <li>Make it responsive</li>
+        </div>
+
+        <div className='text-neutral-500 font-semibold'>
+            Recommend me some ideas on <Link href={`mailto:harshgoel2004@gmail.com?subject=Recommending Ideas for Authentication App`} className='text-neutral-300 font-medium underline'>
+                harshgoel2004@gmail.com
+            </Link>
+        </div>
+    </div>
+  )
+}
+
+export default FeaturesTODO
